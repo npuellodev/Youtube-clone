@@ -1,13 +1,23 @@
 .start-logo-menu{
     display: flex;
     align-items: center;
-    padding-left: 16px;
-    gap: 25px;
+    padding-left: px;
+    gap: 20px;
 }
 
 .start-logo-menu > i {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  text-align: center;  
+  line-height: 40px; 
   font-size: 20px;
   cursor: pointer;
+}
+
+.start-logo-menu > i:hover{
+  background-color: rgb(31, 30, 30);
 }
 
 /*logo youtube*/
