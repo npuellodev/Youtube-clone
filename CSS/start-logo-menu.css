@@ -1,0 +1,22 @@
+.start-logo-menu{
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    gap: 25px;
+}
+
+.start-logo-menu > i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/*logo youtube*/
+.start-logo-menu .logo-icon {
+  display: flex;
+  align-items: center;
+  width: 90px; 
+  height: auto;
+  cursor: pointer;
+}
+
+
