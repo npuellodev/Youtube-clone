@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="CSS/general.css">
     <link rel="stylesheet" href="CSS/nav-bar.css">
     <link rel="stylesheet" href="CSS/start-logo-menu.css">
+    <link rel="stylesheet" href="CSS/center-search-bar.css">
     <!--libreria-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -41,14 +42,17 @@
           </svg></div></span></yt-icon>
         </div>
         <div class="center-search-bar">
-          <div>
-            <input type="text" placeholder="Search">
-            <button>
-              <i class="fa-solid fa-magnifying-glass"></i></button>
+          <div class="input-search-container">
+            <input type="text" placeholder="Search" class="input-search">
+            <i class="fa-solid fa-magnifying-glass" id="search-icon-input"></i>
+            <button class="btn-search">
+              <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+            </button>
           </div>
             <div>
               <button class="btn-mic">
-                <i class="fa-solid fa-microphone"></i></button>
+                <i class="fa-solid fa-microphone" id="microphone-icon"></i>
+              </button>
             </div>
         </div>
         <div class="end-user-menu">

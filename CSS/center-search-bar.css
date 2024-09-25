@@ -1,0 +1,106 @@
+.center-search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/*barra de busqueda*/
+.input-search{
+    width: 550px; 
+    height: 40px;
+    padding-left: 40px;
+    border-radius: 25px;
+    border: 1px solid #272727;
+    transition: border 0.3s ease, border 0.3s ease;
+    outline: none;
+}
+
+.input-search::placeholder{
+    font-size: 18px;
+    color: #979797;
+}
+
+
+/*icono de adyacencia sirve para seleccionar 2 elementos del mismo contenedor padre*/
+/*codigo para que el icono de la lupa se oculte y se muestre cuando se haga foco en la barra de busqueda*/
+.input-search:focus ~ #search-icon-input {
+    display: block; 
+}
+
+#search-icon-input {
+    display: none; 
+}
+
+.input-search:focus {
+    width: 650px;
+    border: 1px solid #2645f0fd;
+}
+
+/*icono de busqueda izquierda*/
+#search-icon-input{
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    color: #979797;
+    pointer-events: none;
+}
+
+/*boton e icono de busqueda lado derecho*/
+#search-icon{
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    background-color: transparent;
+}
+    
+.btn-search{
+    border-radius: 25px;
+    border: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: 1px solid #272727;
+    background-color: #272727;
+    height: 43px;
+    width: 70px;
+    position: absolute;
+    right: 1px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/*boton de microfono*/
+.btn-mic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #979797;
+    background-color: #272727;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+#microphone-icon{
+    width: 50px;
+    color: white;
+    background-color: transparent;
+}
+
+.btn-mic:hover{
+    background-color: #979797;
+}
+
+
