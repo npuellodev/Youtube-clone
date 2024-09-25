@@ -1,0 +1,55 @@
+.end-user-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-upload {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    color: #979797;
+}
+
+.btn-upload:hover {
+    background-color: #212121;
+}
+
+.btn-notification {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    color: #979797;
+    font-size: 20px;
+}
+
+.btn-notification:hover {
+    background-color: #212121;
+}
+
+.btn-user {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    color: #979797;
+    font-size: 20px;
+}
+
+.btn-user:hover {
+    background-color: #212121;
+}
+
+
+
+
