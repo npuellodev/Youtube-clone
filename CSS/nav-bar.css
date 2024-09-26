@@ -11,4 +11,33 @@
     height: 100%;
 }
 
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 0 8px;
+    }
+    /*Ocultar la barra de busqueda en pantallas pequeñas*/
+    .center-search-bar {
+        display: none;
+    }
+    /*Mostrar un icono de busqueda en vez de la barra*/
+    .navbar::after {
+        content: '\f002';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+    }
+    /*Ajustar el espacio entre los elementos*/
+    .end-user-menu {
+        gap: 5px;
+    }
+}
 
+@media screen and (max-width: 480px) {
+    /*Ocultar algunos elementos en pantallas muy pequeñas*/
+    .div-btn-upload, .div-btn-notification {
+        display: none;
+    }
+}

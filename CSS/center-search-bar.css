@@ -31,11 +31,11 @@
 /*icono de adyacencia sirve para seleccionar 2 elementos del mismo contenedor padre*/
 /*codigo para que el icono de la lupa se oculte y se muestre cuando se haga foco en la barra de busqueda*/
 .input-search:focus ~ #search-icon-input {
-    display: block; 
+    display: block;
 }
 
 #search-icon-input {
-    display: none; 
+    display: none;
 }
 
 .input-search:focus {
@@ -60,7 +60,6 @@
     color: #fff;
     background-color: transparent;
 }
-    
 .btn-search{
     border-radius: 25px;
     border: none;
@@ -77,7 +76,6 @@
     font-size: 15px;
     cursor: pointer;
 }
-
 /*boton de microfono*/
 .btn-mic{
     display: flex;
@@ -93,15 +91,23 @@
     margin-left: 15px;
     font-size: 18px;
 }
-
 #microphone-icon{
     width: 50px;
     color: white;
     background-color: transparent;
 }
-
 .btn-mic:hover{
     background-color: #6b6b6b;
 }
 
+/*responsive*/
+/* En pantallas pequeñas, oculta la barra de búsqueda grande */
+@media screen and (max-width: 768px) {
+    .input-search-container {
+        display: none; /* Ocultar el contenedor de búsqueda en pantallas pequeñas */
+    }
+    #search-icon-input {
+        display: block; /* Mostrar solo el icono de búsqueda*/
+    }
+}
 

@@ -10,8 +10,8 @@
   height: 40px;
   border: none;
   border-radius: 50%;
-  text-align: center;  
-  line-height: 40px; 
+  text-align: center;
+  line-height: 40px;
   font-size: 20px;
   cursor: pointer;
 }
@@ -24,9 +24,7 @@
 .start-logo-menu .logo-icon {
   display: flex;
   align-items: center;
-  width: 90px; 
+  width: 90px;
   height: auto;
   cursor: pointer;
 }
-
-
