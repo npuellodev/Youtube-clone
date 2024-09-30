@@ -25,6 +25,12 @@
   flex-direction: row;
   gap: 20px;
   padding: 10px 0;
+  scrollbar-width: none;/* Para Firefox */
+  -ms-overflow-style: none;/* Para Internet Explorer y Edge */
+}
+
+.recommended-categories::-webkit-scrollbar {
+  display: none;/* Para Chrome, Safari y Opera */
 }
 
 .box-recommended-categories {
@@ -57,7 +63,7 @@
 }
 
 .all-btn:hover, .category-btn:hover {
-  background-color: #e0e0e0;
+  background-color: #929292;
   transition: background-color 0.3s ease;
 }
 
@@ -112,9 +118,8 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
   gap: 15px;
-  padding: 5px 0;
+  padding: 10px 0;
 
 }
 
@@ -152,6 +157,7 @@
   color: #616161;
   gap: 5px;
   min-width: 0;
+  padding: 5px 0
 }
 
 .channel-name, .video-views-date {
@@ -179,11 +185,11 @@
 .sidebar {
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: sticky;
   top: 56px;
   z-index: 100;
-  gap: 10px;
-  padding: 10px;
+  padding: 10px 20px 0 0;
 }
 
 .sidebar-btn{
@@ -197,7 +203,9 @@
   border: none;
   cursor: pointer;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px 15px;
+  aspect-ratio: 1/1;
+
 }
 
 .sidebar-btn:hover {
@@ -206,14 +214,14 @@
 
 .sidebar-btn > i{
   color: #fff;
-  font-size: 12px;
+  font-size: 20px;
   background-color: transparent;
   border: none;
 }
 
 .sidebar > i {
   color: #fff;
-  font-size: 20px;
+  font-size: 12px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -221,7 +229,7 @@
 
 .sidebar-btn-text{
   color: #fff;
-  font-size: 12px;
+  font-size: 10px;
   background-color: transparent;
   border: none;
   cursor: pointer;
