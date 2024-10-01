@@ -25,6 +25,7 @@
   flex-direction: row;
   gap: 20px;
   padding: 10px 0;
+  height: 100%;
   scrollbar-width: none;/* Para Firefox */
   -ms-overflow-style: none;/* Para Internet Explorer y Edge */
 }

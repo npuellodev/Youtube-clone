@@ -1,22 +1,22 @@
 .navbar {
-    position: sticky;
-    display: grid;
-    top: 0;
-    z-index: 1000;
-    padding: 10px 25px;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    height: 100%;
-    gap: 20px;
-    white-space: nowrap;
+  position: sticky;
+  display: grid;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 25px;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  height: 100%;
+  gap: 20px;
+  white-space: nowrap;
 }
 
 /* Esto asegura que los elementos dentro de las tres partes se alineen correctamente */
 .start-menu, .end-user-menu {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    min-width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: max-content;
 }
 /*-----------------------------------------div start*/
 .start-logo-menu{
@@ -26,27 +26,27 @@
 }
 
 .start-logo-menu > i {
-width: 40px;
-height: 40px;
-border: none;
-border-radius: 50%;
-text-align: center;
-line-height: 40px;
-font-size: 20px;
-cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .start-logo-menu > i:hover{
-background-color: rgb(31, 30, 30);
+  background-color: rgb(31, 30, 30);
 }
 
 /*logo youtube*/
 .start-logo-menu .logo-icon {
-display: flex;
-align-items: center;
-width: 90px;
-height: auto;
-cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 90px;
+  height: auto;
+  cursor: pointer;
 }
 
 
@@ -223,47 +223,18 @@ cursor: pointer;
 
 /* Responsive */
 
-@media screen and (max-width: 1200px) {
-  .center-search-bar {
-      max-width: 500px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .center-search-bar{
-    max-width: 400px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .center-search-bar{
-    max-width: 300px;
-  }
-}
-
-@media screen and (max-width: 768px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   .navbar {
+    grid-template-columns: auto 1fr auto;
     gap: 10px;
   }
-  .center-search-bar{
-    max-width: 250px;
-  }
-  .input-search-container{
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 654px) {
-  .navbar{
-    grid-template-columns: auto 1fr auto;
-
-  }
-  .input-search-container{
+  .input-search-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
   }
-  .btn-search-responsive{
+  .btn-search-responsive, .btn-mic-responsive {
     display: block;
     width: 40px;
     height: 40px;
@@ -275,29 +246,48 @@ cursor: pointer;
     padding: 0;
     font-size: 18px;
   }
-  .btn-mic-responsive{
-    display: block;
-    width: 40px;
-    height: 40px;
-    color: #979797;
-    background-color: transparent;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    padding: 0;
-    font-size: 18px;
-  }
-  .btn-search-responsive:hover, .btn-mic-responsive:hover{
+  .btn-search-responsive:hover, .btn-mic-responsive:hover {
     background-color: #212121;
   }
-  #microphone-icon-responsive, #search-icon-responsive{
+  #microphone-icon-responsive, #search-icon-responsive {
     background: transparent;
   }
-  .input-search, .btn-search, #search-icon ,.btn-mic{
+  .input-search, .btn-search, #search-icon, .btn-mic {
     display: none;
   }
-  .end-user-menu{
+  .end-user-menu {
     gap: 8px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .center-search-bar {
+    max-width: 250px;
+  }
+  .input-search-container {
+    max-width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .center-search-bar {
+    max-width: 400px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .center-search-bar {
+    max-width: 500px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .center-search-bar {
+    max-width: 640px;
   }
 }
 
